@@ -11,17 +11,19 @@
 <!--	  <div class="panel panel-info">-->
 		<div class="panel-heading home panel-title">{{post.title}} </div>
 		<div class="panel-body">
-			<p><button type="button" class="btn btn-primary ng-binding" ng-click="upVote(post)"><span class="glyphicon glyphicon-thumbs-up"></span> Votes: {{post.upvotes}}</button> <a href="#/comment/-KMpYed5VdB1j5JXjmBT" class="btn btn-primary ng-binding"><span class="glyphicon glyphicon-comment"></span> {{post.comments.length}}</a></p>
+			<p><button type="button" class="btn btn-primary ng-binding" ng-click="upVote(post)"><span class="glyphicon glyphicon-thumbs-up"></span> Votes: {{post.upvotes}}</button> <a href="#!/suggestion/{{$index}}" class="btn btn-primary ng-binding"><span class="glyphicon glyphicon-comment"></span> {{post.comments.length}}</a></p>
 			
 <!--
 			<p>	
 				<span class="glyphicon glyphicon-plus-sign" ng-click="upVote(post)"></span> Upvotes: {{post.upvotes}}
 			</p>
 -->
+<!--
 			<div>
 				<a href="#!/suggestion/{{$index}}">Comments: </a>
 				{{post.comments}} 
 			</div>
+-->
 		</div>	
 			</br>
 <!--	  </div>-->
