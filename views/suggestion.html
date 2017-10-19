@@ -1,21 +1,37 @@
-<div class="post">
-  <h2><span class="title">{{post.title}} </span> </h2>
+<div class="panel panel-info">
+	<div class="panel-heading">
+		
+		<h2><a class="btn btn-default" href="javascript:history.go(-1)">
+				<span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>
+			</a>
+			{{post.title}}  
+		</h2>
+	</div>
+<!--
+	<form ng-submit="addComment()" style="margin-top: 50px">
+			<h3> Submit Your Comment </h3>
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="New comment here" ng-model="comtitle"></input>
+			</div>
+			<button type="submit" class="btn btn-primary">Suggest</button>
+	</form>	
+-->
+
+
+  <form ng-submit="addComment()" style="margin-top: 15px" class="ng-pristine ng-valid">
+	<div class="form-group">
+		<input type="text" class="form-control" placeholder="Add a comment, press enter" ng-model="comtitle">
+	</div>
+  </form>
 	
-<form ng-submit="addComment()" style="margin-top: 50px">
-		<h3> Submit Your Comment </h3>
-		<div class="form-group">
-			<input type="text" class="form-control" placeholder="New comment here" ng-model="comtitle"></input>
-		</div>
-		<button type="submit" class="btn btn-primary">Suggest</button>
-</form>	
-	
-  <div class="comments-list" ng-repeat="onecomment in post.comments | orderBy:'-upvotes'">
-	<p >{{ onecomment.body }}</p>
-	<p>	
-		<span class="glyphicon glyphicon-plus-sign" ng-click="upComVote(onecomment)"></span> Upvotes: {{onecomment.upvotes}}
-	</p>
-	
-  </div>
+  <ul class="list-group" >
+	<li class="list-group-item" ng-repeat="onecomment in post.comments | orderBy:'-upvotes'">
+	  	{{ onecomment.body }}
+		<p>	
+			<span class="glyphicon glyphicon-plus-sign" ng-click="upComVote(onecomment)"></span> Upvotes: {{onecomment.upvotes}}
+		</p>
+	  </li>
+  </ul>
 
 
 </div>

@@ -1,5 +1,5 @@
 <form ng-submit="addSuggestion()" style="margin-top: 50px" class="well">
-	<h3> Submit Your Suggestion </h3>
+	<h4> Submit Your Suggestion </h4>
 	<div class="form-group">
 		<input type="text" class="form-control" placeholder="Great ideas here" ng-model="intitle"></input>
 	</div>
@@ -12,19 +12,8 @@
 		<div class="panel-heading home panel-title">{{post.title}} </div>
 		<div class="panel-body">
 			<p><button type="button" class="btn btn-primary ng-binding" ng-click="upVote(post)"><span class="glyphicon glyphicon-thumbs-up"></span> Votes: {{post.upvotes}}</button> <a href="#!/suggestion/{{$index}}" class="btn btn-primary ng-binding"><span class="glyphicon glyphicon-comment"></span> {{post.comments.length}}</a></p>
-			
-<!--
-			<p>	
-				<span class="glyphicon glyphicon-plus-sign" ng-click="upVote(post)"></span> Upvotes: {{post.upvotes}}
-			</p>
--->
-<!--
-			<div>
-				<a href="#!/suggestion/{{$index}}">Comments: </a>
-				{{post.comments}} 
-			</div>
--->
 		</div>	
+
 			</br>
 <!--	  </div>-->
 	</li>
