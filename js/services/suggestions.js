@@ -2,32 +2,32 @@ app.factory('suggestions', [function(){
 	var demoSuggestions = {
 		posts:[
 			{
-				title: 'Free pizza at club meetings',
+				title: 'Grimm',
 				upvotes: 15,
-				comments: [{body: "comment 1-1", upvotes: 3}, 
-						   {body: "comment 1-2", upvotes: 1} 
+				comments: [{body: "not for children!", upvotes: 3}, 
+						   {body: "The best!", upvotes: 1} 
 						  ],
 			},
 			{
-				title: 'End all club emails with Laffy Taffy jokes',
+				title: 'The big bang theory',
 				upvotes: 9,
-				comments: [{body: "comment 2-1", upvotes: 8}, 
-						   {body: "comment 2-2", upvotes: 5} 
+				comments: [{body: "did you see Live Show Taping?  https://www.youtube.com/watch?v=pEKm54STV2Q", upvotes: 8}, 
+						   {body: "They are so amazing", upvotes: 5} 
 						  ],
 			},
 			{
-				title: 'Retrofit water fountain with Gatorade',
+				title: 'Westworld, 2016',
 				upvotes: 7,
-				comments: [{body: "comment 3-1", upvotes: 2},
-						   {body: "comment 3-2", upvotes: 2},
-						   {body: "comment 3-3", upvotes: 4} 
+				comments: [{body: "I like it very much", upvotes: 2},
+						   {body: "If you want to see something really unusial", upvotes: 2},
+						   {body: "can not understand it", upvotes: 4} 
 						  ],
 			},
 			{
-				title: 'Sing Bon Jovi\'s "Living on a Prayer" halfway through meetings',
+				title: 'Star Trek (old series)',
 				upvotes: 3,
-				comments: [{body: "comment 4-1", upvotes: 8}, 
-						   {body: "comment 4-2", upvotes: 6} 
+				comments: [{body: "oh, really, how can you watch it?..", upvotes: 8}, 
+						   {body: "great film", upvotes: 6} 
 						  ],
 			},
 		]
