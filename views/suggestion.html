@@ -28,7 +28,8 @@
 	<li class="list-group-item" ng-repeat="onecomment in post.comments | orderBy:'-upvotes'">
 	  	{{ onecomment.body }}
 		<p>	
-			<span class="glyphicon glyphicon-plus-sign" ng-click="upComVote(onecomment)"></span> Upvotes: {{onecomment.upvotes}}
+<!--			<span class="glyphicon glyphicon-plus-sign" ng-click="upComVote(onecomment)"></span> Upvotes: {{onecomment.upvotes}}-->
+			<button type="button" class="btn btn-primary" ng-click="upVote(post)"><span class="glyphicon glyphicon-thumbs-up"></span> Votes: {{post.upvotes}}</button>
 		</p>
 	  </li>
   </ul>
